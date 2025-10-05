@@ -6,6 +6,8 @@ import LoginScreen from './screens/LoginScreen';
 import RegisterScreen from './screens/RegisterScreen';
 import AuctionScreen from './screens/AuctionScreen';
 import HomeScreen from './screens/HomeScreen';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
 
 const App = () => {
   return (
