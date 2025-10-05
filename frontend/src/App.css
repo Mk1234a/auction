@@ -1,0 +1,30 @@
+body {
+  background-color: #f8f9fa;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  background-color: #343a40;
+  color: white;
+  padding: 15px 0;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+h1, h2, h3, h4 {
+  color: #212529;
+}
+
+.main-container {
+  max-width: 900px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
