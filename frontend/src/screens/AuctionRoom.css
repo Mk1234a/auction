@@ -1,0 +1,27 @@
+.auction-room {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.player-info {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.bid-info {
+  width: 100%;
+  max-width: 600px;
+}
+
+.bid-history {
+  list-style: none;
+  padding: 0;
+}
+
+.bid-history li {
+  padding: 5px 0;
+}
