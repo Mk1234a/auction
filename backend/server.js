@@ -30,18 +30,18 @@ app.use('/api/users', userRoutes);
 app.use('/api/players', playerRoutes);
 const teamRoutes = require('./routes/teamRoutes');
 app.use('/api/teams', teamRoutes);
-const auctionRoutes = require('./routes/auctionRoutes');
-app.use('/api/auctions', auctionRoutes);
+const tournamentRoutes = require('./routes/tournamentRoutes');
+app.use('/api/tournaments', tournamentRoutes);
 
 app.get('/', (req, res) => {
   res.send('Auction API is running');
 });
 
-const auctionSocket = require('./socket/auctionSocket');
+const tournamentSocket = require('./socket/tournamentSocket');
 
 io.on('connection', (socket) => {
   console.log('a user connected');
-  auctionSocket(io, socket);
+  tournamentSocket(io, socket);
 });
 
 const PORT = process.env.PORT || 5000;

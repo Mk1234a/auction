@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const auctionSchema = new mongoose.Schema({
+const tournamentSchema = new mongoose.Schema({
   name: { type: String, required: true, unique: true },
   teams: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Team' }],
   players: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Player' }],
@@ -8,6 +8,6 @@ const auctionSchema = new mongoose.Schema({
   currentPlayer: { type: mongoose.Schema.Types.ObjectId, ref: 'Player', default: null },
 });
 
-const Auction = mongoose.model('Auction', auctionSchema);
+const Tournament = mongoose.model('Tournament', tournamentSchema);
 
-module.exports = Auction;
+module.exports = Tournament;
